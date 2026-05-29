@@ -1,0 +1,79 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+    width: 100%;
+    aspect-ratio: 500 / 750;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0) ,rgba(0, 0, 0, 0.235)), 
+                url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/vuong-tam/02.jpg') no-repeat center / cover;
+    .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        color: white;
+        font-family: $blushing-rose-font; 
+        p.date-range {
+            font-size: 44px;
+            letter-spacing: 5px;
+            margin-bottom: 4%;
+        }
+        p.couple-names {
+            font-size: 32px;
+            margin-bottom: 5%;
+            text-transform: uppercase;
+        }
+        .invited-text {
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: 2px;
+            margin-bottom: 6%;
+        }
+    }
+
+    &.parent {
+        .content {
+            p.date-range {
+                font-size: 48px;
+            }
+            p.couple-names {
+                font-size: 29px;
+            }
+            .invited-text {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            p.date-range {
+                font-size: calc((44 / 500) * 100vw);
+                letter-spacing: calc((5 / 500) * 100vw);
+            }
+            p.couple-names {
+                font-size: calc((25 / 500) * 100vw);
+            }
+            .invited-text {
+                font-size: calc((12/ 500) * 100vw);
+                letter-spacing: calc((2 / 500) * 100vw);
+            }
+        }
+
+        &.parent {
+            .content {
+                p.date-range {
+                    font-size: calc((48 / 500) * 100vw);
+                }
+                p.couple-names {
+                    font-size: calc((29 / 500) * 100vw);
+                }
+                .invited-text {
+                    font-size: calc((16 / 500) * 100vw);
+                }
+            }
+        }
+    }
+}
+

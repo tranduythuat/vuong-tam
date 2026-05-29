@@ -1,0 +1,72 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.qrcode {
+    width: 100%;
+    .content {
+        width: 100%;
+        text-align: left;
+        padding: 0 10% 15%;
+        font-family: "1FTVBlushingRose", sans-serif;
+        h2 {
+            font-size: 25px;
+            margin-bottom: 5%;
+            font-weight: 300;
+        }
+
+        .qr-btn {
+            display: block;
+            @include flex-center;
+            width: 35%;
+            padding: 2%;
+            background: #838484;
+            color: #000;
+            border: none;
+            border-radius: 15px;
+            font-weight: 300;
+            font-size: 12px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s ease;
+            margin-top: 3%;
+            text-decoration: none;
+        }
+    }
+}
+div:where(.swal2-container) img:where(.swal2-image) {
+    margin: 0 !important;
+    object-fit: cover;
+    object-position: 100% 50%;
+}
+
+.qrcode-box {
+    display: flex;
+    flex-direction: row-reverse;
+    .item  {
+        width: 100%;
+        margin-bottom: 6%;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .info {
+            margin-bottom: 2%;
+        }
+        .qrcode-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+            }
+        }
+        
+    }
+}
+  

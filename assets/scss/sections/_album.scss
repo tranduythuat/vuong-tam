@@ -1,0 +1,67 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.album {
+    width: 100%;
+    .content {
+        width: 100%;
+        aspect-ratio: 500 / 760;
+        padding: 15% 0;
+        .swiper {
+            width: 100%;
+            height: 100%;
+            overflow: unset;
+        
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .swiper-button-next,
+            .swiper-button-prev {
+                color: white;
+            }
+
+            .swiper-pagination-bullet {
+                max-width: 16px;
+                height: unset;
+                aspect-ratio: 16 / 16;
+                width: 100%;
+                z-index: 9999;
+            }
+
+            .swiper-pagination-bullet-active {
+                background: #625f40ff;
+            }
+
+            .swiper-horizontal>.swiper-pagination-bullets, 
+            .swiper-pagination-bullets.swiper-pagination-horizontal, 
+            .swiper-pagination-custom, 
+            .swiper-pagination-fraction {
+                bottom: var(--swiper-pagination-bottom, -6%);
+            }
+
+            .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+            .swiper-pagination-horizontal.swiper-pagination-bullets 
+            .swiper-pagination-bullet {
+                margin: 0 1.3%;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            .swiper {
+                .swiper-button-next:after, 
+                .swiper-button-prev:after {
+                    font-size: calc((44 / 500) * 100vw);
+                }
+
+                .swiper-pagination-bullet {
+                    max-width:  calc((16 / 500) * 100vw);
+                }
+            }
+        }
+    }
+}
+
