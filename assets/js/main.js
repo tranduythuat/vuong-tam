@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="qrcode-box">
                   <div class="item">
                       <div class="qrcode-img">
-                          <img src="../assets/images/qrcode.jpg" alt="">
+                          <img src="assets/images/qrcode.jpg" alt="">
                       </div>
                   </div>
               </div>
