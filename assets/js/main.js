@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = e.target;
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
-    console.log("🚀 ~ handleFormSubmit ~ data:", data);
+    console.log("🚀 ~ handleFormSubmit ~ data test:", data);
 
     const {
       name: name,
