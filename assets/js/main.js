@@ -115,13 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
           html: `
               <div class="qrcode-box">
                   <div class="item">
-                      <div class="info">
-                          <p>Tên TK: *****</p>
-                          <p>Số TK: *****</p>
-                          <p>Ngân hàng: MBBank</p>
-                      </div>
                       <div class="qrcode-img">
-                          <img src="../assets/images/IMG_4883.jpg" alt="">
+                          <img src="../assets/images/qrcode.jpg" alt="">
                       </div>
                   </div>
               </div>

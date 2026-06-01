@@ -150,7 +150,7 @@ header {
 .hero {
   width: 100%;
   aspect-ratio: 500/750;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.235)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/vuong-tam/02.jpg") no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.235)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/vuong-tam/03.jpg") no-repeat center/cover;
 }
 .hero .content {
   width: 100%;
@@ -219,6 +219,11 @@ header {
   text-align: left;
   letter-spacing: 1px;
   line-height: 1.3;
+}
+.invitation .content .text-box .initials .logo {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
 }
 .invitation .content .text-box .initials h2 {
   font-size: 70px;
@@ -595,7 +600,7 @@ header {
 .album .content .swiper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .album .content .swiper .swiper-button-next,
 .album .content .swiper .swiper-button-prev {
@@ -870,6 +875,7 @@ div:where(.swal2-container) img:where(.swal2-image) {
   align-items: center;
 }
 .qrcode-box .item .qrcode-img img {
+  margin-top: 5%;
   width: 30%;
   display: flex;
   flex-direction: column;
