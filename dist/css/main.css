@@ -235,7 +235,7 @@ header {
   margin-top: 15%;
 }
 .invitation .content .text-box .family-info p {
-  font-size: 11px;
+  font-size: 13px;
 }
 .invitation .content .text-box .family-info p.en {
   margin-top: 4%;
@@ -244,7 +244,7 @@ header {
   margin-top: 5%;
 }
 .invitation .content .text-box .invitation-text p {
-  font-size: 11px;
+  font-size: 13px;
 }
 .invitation .content .text-box .invitation-text p.en {
   margin-top: 4%;
@@ -313,10 +313,10 @@ header {
     font-size: 6vw;
   }
   .invitation .content .text-box .family-info p {
-    font-size: 2.2vw;
+    font-size: 2.6vw;
   }
   .invitation .content .text-box .invitation-text p {
-    font-size: 2.2vw;
+    font-size: 2.6vw;
   }
   .invitation .content .text-box .couple-info h2 {
     font-size: 5.2vw;
@@ -431,14 +431,14 @@ header {
   margin-bottom: 5%;
 }
 .location .content .ceremony-block .timeline .timeline-grid .item .icon {
-  width: 50px;
-  aspect-ratio: 50/70;
-  margin: 0 auto;
+  width: 100%;
+  aspect-ratio: 50/45;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .location .content .ceremony-block .timeline .timeline-grid .item .icon img {
+  max-width: 50px;
   width: 100%;
   height: auto;
 }
@@ -551,8 +551,8 @@ header {
   .location .content .ceremony-block .timeline h2 {
     font-size: 4.8vw;
   }
-  .location .content .ceremony-block .timeline .timeline-grid .item .icon {
-    width: 10vw;
+  .location .content .ceremony-block .timeline .timeline-grid .item .icon img {
+    max-width: 10vw;
   }
   .location .content .ceremony-block .location-details .location-icon {
     max-width: 4.8vw;

@@ -74,12 +74,11 @@
                         justify-content: space-between;
                         margin-bottom: 5%;
                         .icon {
-                            width: 50px;
-                            aspect-ratio: 50 / 70;
-                            margin: 0 auto;
+                            width: 100%;
+                            aspect-ratio: 50 / 45;
                             @include flex-center;
-                            
                             img {
+                                max-width: 50px;
                                 width: 100%;
                                 height: auto;
                             }
@@ -224,7 +223,9 @@
                     .timeline-grid {
                         .item {
                             .icon {
-                                width: calc((50 / 500) * 100vw);
+                                img {
+                                    max-width: calc((50 / 500) * 100vw);
+                                }
                             }
                         }
                     }

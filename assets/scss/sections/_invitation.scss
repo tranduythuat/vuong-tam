@@ -29,7 +29,7 @@
             .family-info {
                 margin-top: 15%;
                 p {
-                    font-size: 11px;
+                    font-size: 13px;
                 }
                 p.en  {
                     margin-top: 4%;
@@ -39,13 +39,14 @@
             .invitation-text {
                 margin-top: 5%;
                 p {
-                    font-size: 11px;
+                    font-size: 13px;
                 }
                 p.en {
                     margin-top: 4%;
                     margin-bottom: 15%;
                 }
             }
+            
             .couple-info {
                 text-transform: uppercase;
                 margin-top: 10%;
@@ -137,13 +138,13 @@
 
                 .family-info {
                     p {
-                        font-size: calc((11 / 500) * 100vw);  
+                        font-size: calc((13 / 500) * 100vw);  
                     }
                 }
     
                 .invitation-text {
                     p {
-                        font-size: calc((11 / 500) * 100vw);  
+                        font-size: calc((13 / 500) * 100vw);  
                     }
                 }
     
