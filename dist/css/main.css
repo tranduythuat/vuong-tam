@@ -149,8 +149,8 @@ header {
 
 .hero {
   width: 100%;
-  aspect-ratio: 500/750;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.235)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/vuong-tam/03.jpg") no-repeat center/cover;
+  aspect-ratio: 500/818;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.235)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/vuong-tam/03.jpg") no-repeat 12% 100%/110%;
 }
 .hero .content {
   width: 100%;
@@ -305,6 +305,9 @@ header {
 @media (max-width: 500px) {
   .invitation .content .text-box {
     letter-spacing: 0.2vw;
+  }
+  .invitation .content .text-box .initials .logo {
+    max-width: 24vw;
   }
   .invitation .content .text-box .initials h2 {
     font-size: 14vw;
